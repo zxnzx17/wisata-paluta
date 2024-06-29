@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Padang Lawas Utara</title>
+    <link rel="icon" href="/img//favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- NAVIGASI -->
+    <nav>
+        <div class="wrapper-nav">
+            <div class="menu">
+                <img src="./img/logo_paluta.png" alt="logo">
+                <ul>
+                    <li><a href="index.html#">Beranda</a></li>
+                    <li><a href="#destination">Prioritas</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#maps">Maps</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <div id="home" class="home">
+        <div class="text-home">
+            <h3>Wisata</h3>
+            <h3>Padang Lawas Utara</h3>
+            <a href="#destination"><button type="button" class="btn btn-secondary">Lihat Destinasi</button></a>
+        </div>
+    </div>  
+    
+    <!-- DESTINATION -->
+    <section id="destination">
+        <div class="destination-section row justify-content-center">
+            <div class="description">
+                <h2 class="mb-3">Daftar Destinasi Wisata Prioritas</h2>
+                <img src="./img/animation_26233865_7202880.jpg" alt="animation">
+                <p>Tersembunyi di peradaban sejarah yang berlimpah, Destinasi Wisata Prioritas di Padang Lawas Utara memikat dengan pesona alam yang mengagumkan, warisan budaya yang kaya, dan keramahan masyarakatnya yang memikat.</p>
+            </div>
+            <div class="row">
+                <div class="destination-card card mb-5 pt-5">
+                    <img src="./img/hotel-sapadia.jpg" class="card-img-top" alt="hotel-sapadia">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Hotel Sapadia</h5>
+                        <p class="card-text">Hotel Sapadia Gunung Tua adalah sebagai titi awal dan titik akhir dalam rute wisata penelitian ini, yang dikelilingi oleh keindahan alam pegunungan yang menawan. Daya tarik utamanya adalah lokasinya yang tenang dan sejuk, ideal untuk para wisatawan yang mencari ketenangan dan keindahan alam. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="address">Alamat</p>
+                            <p>Simbolon, Kec. Padang Bolak, Kabupaten Padang Lawas Utara, Sumatera Utara 22753</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="facility">Fasilitas</p>
+                            <p>Kamar-kamar yang nyaman dengan pemandangan alam, restoran yang menyajikan masakan lokal dan internasional, kolam renang, area spa untuk relaksasi, serta akses Wi-Fi gratis.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="price">Harga Kamar</p>
+                            <p>Rp500000 – Rp1500000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="destination-card card mb-5 pt-5">
+                    <img src="./img/candi-bahal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Candi Bahal</h5>
+                        <p class="card-text">Candi Bahal adalah kompleks candi Buddha dari abad ke-11 hingga abad ke-13, terkenal dengan arsitektur batu bata merah dan pengaruh budaya Vajrayana. Daya tarik utamanya adalah struktur candi yang megah dan relief-relief yang menggambarkan cerita-cerita Buddha yang menarik dan edukatif.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="address">Alamat</p>
+                            <p>Desa Bahal, Padang Bolak, Sibatu Loting, Kec. Barumun Tengah, Kabupaten Padang Lawas Utara, Sumatera Utara 22741</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="facility">Fasilitas</p>
+                            <p>Area parkir, pemandu wisata lokal, toilet, mushola dan beberapa kios yang menjual makanan dan minuman</p></li>
+                        <li class="list-group-item">
+                            <p class="price">Harga Tiket</p>
+                            <p>Hari biasa : Rp3000 untuk anak-anak Rp5000 dewasa</p>
+                            Hari Libur : Rp10000 untuk dewasa Rp5000 untuk anak- anak
+                            <p></p>
+                            </li>
+                    </ul>
+                </div>
+                <div class="destination-card card mb-5 pt-5">
+                    <img src="./img/barumun.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Barumun Nagari Wildlife Sanctuary</h5>
+                        <p class="card-text">Barumun Nagari Wildlife Sanctuary adalah suaka margasatwa yang berfokus pada pelestarian spesies terancam seperti gajah Sumatera dan harimau Sumatera. Daya tarik utamanya adalah pengalaman melihat gajah di habitat semi-alami mereka serta program konservasi yang mendidik pengunjung tentang perlindungan satwa liar. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="address">Alamat</p>
+                            <p>Desa, Batu Nanggar, Kec. Batang Onang, Kabupaten Padang Lawas Utara, Sumatera Utara 22762</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="facility">Fasilitas</p>
+                            <p>Area Parkir, Toilet, Rumah makan, pemandu wisata lokal, dan akomodasi sederhana.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="price">Harga Tiket</p>
+                            <p>Rp50000 – Rp200000</p> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="destination-card card mb-5 pt-5">
+                    <img src="./img/batik-sekar.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Batik Sekar Najogi</h5>
+                        <p class="card-text">Batik Sekar Najogi adalah sebuah tempat yang terkenal dengan warisan batiknya yang khas. Daya tarik utamanya adalah koleksi batik yang unik dengan motif-motif tradisional khas daerah Paluta, yang sering kali menggambarkan keindahan alam dan kehidupan sehari-hari masyarakat. Tempat ini tidak hanya menyajikan pengalaman budaya yang mendalam tetapi juga memberikan kontribusi dalam pelestarian dan promosi seni batik lokal di Sumatera Utara.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="address">Alamat</p>
+                            <p>Desa Batang Pane I, Kabupaten Padang Lawas Utara, Sumatera Utara 22753</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="facility">Fasilitas</p>
+                            <p>Mencakup galeri pameran, workshop batik untuk belajar teknik pembuatan batik, dan toko souvenir untuk membeli produk batik.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="price">Harga Souvenir</p>
+                            <p>Rp50000 – Rp150000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="destination-card card mb-5 pt-5">
+                    <img src="./img/holat-alhamdulillah.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Rumah Makan Holat Alhamdulillah</h5>
+                        <p class="card-text">Rumah Makan Holat Alhamdulillah adalah rumah makan yang terkenal dengan masakan tradisional Batak Mandailing yang autentik dan lezat. Daya tarik utamanya adalah menu masakan Padang yang khas, seperti holat, sup daging sapi, rendang, dan gulai yang disajikan dalam konsep "all you can eat" yang populer di daerah tersebut.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="address">Alamat</p>
+                            <p>Jl. Lintas Sumatra, Ps. Gn. Tua, Kec. Padang Bolak, Kabupaten Padang Lawas Utara, Sumatera Utara 22753</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="facility">Fasilitas</p>
+                            <p>Ruang makan yang luas dan nyaman, layanan makanan yang ramah dan cepat, serta pilihan menu yang beragam dan segar.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="price">Harga Makanan dan Minuman</p>
+                            <p>Rp50000 - Rp100000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="destination-card card mb-5 pt-5">
+                    <img src="./img/waterboom-rcm.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Waterboom RCM</h5>
+                        <p class="card-text">Waterboom RCM Gunung Tua menawarkan pengalaman rekreasi yang menyenangkan bagi keluarga dan pengunjung dari berbagai usia. Daya tarik utamanya adalah berbagai wahana air yang menarik seperti seluncuran air, kolam renang untuk anak-anak dan dewasa, serta area permainan air lainnya. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="address">Alamat</p>
+                            <p>Sosopan, Kec. Padang Bolak, Kabupaten Padang Lawas Utara, Sumatera Utara 22753</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="facility">Fasilitas</p>
+                            <p>Kafe/restoran untuk menyantap makanan dan minuman, area duduk, kamar mandi dan kamar ganti, serta tempat parkir yang luas.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="price">Harga Tiket</p>
+                            <p>Rp40000 - Rp100000</p></li>
+                    </ul>
+                </div>
+                <div class="destination-card card mb-5 pt-5">
+                    <img src="./img/durian-dan-manggis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Agrowisata Durian dan Manggis</h5>
+                        <p class="card-text">Agrowisata Durian dan Manggis adalah destinasi wisata yang menawarkan pengalaman petik durian dan manggis langsung dari kebunnya. Daya tarik utamanya adalah kesempatan untuk menikmati buah durian dan manggis segar serta belajar mengenai proses pertanian buah-buahan tropis. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="address">Alamat</p>
+                            <p>Desa Pagarantonga, Simangambat, Kabupaten Padang Lawas Utara, Sumatera Utara</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="facility">Fasilitas</p>
+                            <p>Kamar mandi, musholla,  area kebun dengan berbagai pohon durian dan manggis, tur petik buah, area piknik, dan kios untuk membeli buah-buahan segar.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="price">Harga Tiket</p>
+                            <p>Rp15000 - Rp80000</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    <!-- ABOUT US -->
+    <div id="about">
+        <div class="about-us">
+            <h2 class="mb-1">ABOUT</h2>
+            <h2 class="mb-5">PADANG LAWAS UTARA</h2>
+            <img src="./img/ananimation_17053936_58312391.png" alt="animation">
+            <p>Padang Lawas Utara, sebuah kabupaten yang terletak di Provinsi Sumatera Utara, menawarkan sebuah cerita yang kaya akan warisan sejarah dan keindahan alam yang menakjubkan. Terletak di kaki Bukit Barisan, wilayah ini memikat dengan pesona alamnya yang meliputi pegunungan yang hijau subur, sungai-sungai yang mengalir jernih, dan kekayaan flora dan fauna yang beragam.</p>
+            <br>
+            <p>Selain itu, Padang Lawas Utara juga dipenuhi dengan peninggalan bersejarah, seperti situs-situs arkeologi yang memperlihatkan jejak peradaban masa lampau. Budaya yang kaya dan keramahan masyarakatnya menjadi daya tarik tambahan bagi para wisatawan yang mengunjungi daerah ini, menawarkan pengalaman wisata yang mendalam dan berkesan bagi setiap pengunjungnya.</p>
+        </div>
+    </div>
+
+    <!-- Maps -->
+    <div id="maps">
+        <div class="maps-section">
+            <h2>Maps</h2>
+            <button type="button" class="btn btn-warning mb-4" onclick="runTabuSearch()">Run Tabu Search</button>
+            <div id="result"></div>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="wrapper">
+            <div class="footer-list">
+                <div class="footer-section">
+                    <img src="./img/logo_paluta.png" alt="Logo">
+                </div>
+                <div class="footer-section">
+                    <h3 class="mb-4">Contact E-mail</h3>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></svg>palutadispar@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="mb-3">Social</h3>
+                    <a href="https://www.youtube.com/channel/UCpSxUkqqQWVsdMJ0sgEI-wg" target="_blank">.<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg> </a>
+                    <a href="https://www.instagram.com/disbudparpaluta/" target="_blank">.<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                    <a href="https://web.facebook.com/pariwisatadankebudayaan.paluta/" target="_blank">.<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer src="/script.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
