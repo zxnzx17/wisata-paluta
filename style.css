@@ -308,18 +308,21 @@ width: 100%;
     /* NAVIGASI RESPONSIVE */
     nav{
         width: 100%;
-        padding: 10px 0;
     }
 
     nav .menu {
         width: 100%;
-        margin: 0;
+        margin: auto;
     }
 
     nav .menu ul {
         text-align: center;
         margin: auto;
         line-height: 60px;
+    }
+
+    .wrapper-nav .menu img {
+        margin: 10px 0 0 30px;
     }
 
     nav .menu ul li {
@@ -378,20 +381,21 @@ width: 100%;
 
     /* ABOUT RESPONSIVE */
     #about .about-us{
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
 
     #about .about-us h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     #about .about-us p{
-        width: 80%;
+        width: 100%;
         font-size: 1.1em;
     }
 
     #about .about-us img{
-        width: 80%;
+        width: 100%;
     }
 
     /* FOOTER RESPONSIVE */
