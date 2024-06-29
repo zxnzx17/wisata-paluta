@@ -208,20 +208,20 @@ button[type="button"]:hover {
 #destination .destination-section .description {
     width: 50%;
     margin: auto;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: 50px;
 }
 
-#destination .destination-section .description h2{
+#destination.destination .destination-section .description h2{
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 #destination .destination-section .description img{
-    width: 80%;
+width: 100%;
 }
 
 .destination-list {
@@ -300,7 +300,7 @@ button[type="button"]:hover {
 }
 
 /* MOBILE REPONSIVE */
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
     .wrapper {
         width: 100%;
     }
@@ -328,31 +328,69 @@ button[type="button"]:hover {
     }
     
     /* HOME RESPONSIVE */
-    .wrapper-home #home{
-        display:block;
+    .home .text-home h3{
+        font-size: 5em;
     }
 
-    .wrapper-home #home img{
-        width: 300px;
-        margin: -100px auto;
+    /* DESTINATION RESPONSIVE */
+    #destination{
+        width: 90%;
     }
 
-    .wrapper-home #home .kolom{
-        margin-left: 50px;
-        margin-top: 100px;
-    }
-
-    /* ABOUT RESPONSIVE */
-    .about-us{
+    #destination.destination .description{
         width: 100%;
     }
 
-    .about-us p{
-        width: 80%;
-        font-size: 18px;
+    #destination.destination .destination-section .description h2{
+        font-size: 2.5em;
     }
 
-    .about-us img{
+    #destination.destination .destination-section .description img{
+        width: 80%;
+        height: auto;
+    }
+
+    #destination.destination .destination-section .description p{
+        font-size: 0.8em;
+    }
+
+    .destination-card {
+        width: 90%; 
+        height: auto; 
+        margin: 20px auto; 
+        padding: 20px;  
+    }
+
+    .destination-card h5, .destination-card .address, .destination-card .facility, .destination-card .price, .destination-card .card-text, .destination-card p {
+        font-size: 16px; 
+        text-align: center; 
+    }
+
+    .destination-card img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .destination-card .card-text {
+        text-align: justify;
+        margin: 10px 0;
+    }
+
+    /* ABOUT RESPONSIVE */
+    #about .about-us{
+        width: 100%;
+    }
+
+    #about .about-us h2 {
+        font-size: 3em;
+    }
+
+    #about .about-us p{
+        width: 80%;
+        font-size: 1.1em;
+    }
+
+    #about .about-us img{
         width: 80%;
     }
 
@@ -364,70 +402,4 @@ button[type="button"]:hover {
     }
 }
 
-@media screen and (max-width: 300px) {
-    /* REPONSIVE NAVIGASI */
-    .wrapper-nav .menu img{
-        height: 100px;
-        margin-top: 40px;
-    }
 
-    .wrapper-nav .menu ul li a{
-        font-size: 14px;
-    }
-
-    /* HOME RESPONSIVE */
-    .home #home{
-        margin: auto;
-    }
-
-    .home #home img{
-        width: 200px;
-    }
-
-    .home #home .kolom h2{
-        font-size: 30px;
-        margin: 10px 0;
-    }
-
-    .home #home .kolom p{
-        width: 90%;
-    }
-
-    /* ABOUT US RESPONSIVE */
-    #about .about-us h2{
-        font-size: 30px;
-    }
-    
-    #about .about-us p{
-        font-size: 15px;
-    }
-
-
-    /* FOOTER RESPONSIVE */
-    #footer .wrapper .footer-list .footer-section img{
-        width: 150px;
-    }
-
-    #footer .wrapper .footer-list .footer-section h3{
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    /* REPONSIVE NAVIGASI */
-    .wrapper-nav .menu img{
-        width: 100px;
-        height: 100px;
-        margin-top: 40px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    #destination .destination-section .row .destination-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 28rem;
-        height: 60rem;
-    }
-}
