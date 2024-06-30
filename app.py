@@ -5,7 +5,7 @@ import numpy as np
 import json
 
 app = Flask(__name__)
-# run_with_ngrok(app)  # Start ngrok when app is run
+run_with_ngrok(app)  # Start ngrok when app is run
 CORS(app)
 
 
@@ -105,5 +105,5 @@ def run_tabu_search():
 
     return Response(json.dumps(response), mimetype='application/json')
 
-if __name__ == '__main__':
+if __name__ == '_main_':
     app.run()
