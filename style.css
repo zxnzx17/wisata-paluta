@@ -100,7 +100,7 @@ nav ul li a:hover {
 /* MAPS */
 #maps {
     background-color: #fff;
-    padding: 100px 50px;
+    padding: 50px 50px;
     border-radius: 10px;
     box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.2);
     margin: 150px auto 0;
@@ -121,27 +121,6 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 50px;
     font-style: normal;
-    text-align: center;
-}
-
-
-.form-group {
-    margin: 20px auto;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 30px;
-}
-
-input[type="text"], input[type="number"] {
-    width: 50%;
-    padding: 20px;
-    margin-top: 10px;
-    border: 1.5px solid #ccc;
-    background: #e0dede;
-    border-radius: 3px;
     text-align: center;
 }
 
@@ -397,6 +376,20 @@ width: 100%;
     #about .about-us img{
         width: 100%;
     }
+
+    /* MAPS RESPONSIVE */
+    #maps{
+        width: 95%;
+    }
+
+    #maps .maps-section{
+        width: 90%;
+    }
+
+    #maps .maps-section #map{
+        width: 100%;
+    }
+
 
     /* FOOTER RESPONSIVE */
     .footer-section {

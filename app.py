@@ -106,4 +106,4 @@ def run_tabu_search():
     return Response(json.dumps(response), mimetype='application/json')
 
 if __name__ == '_main_':
-    app.run
+    app.run()
