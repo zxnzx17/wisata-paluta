@@ -5,7 +5,7 @@ import numpy as np
 import json
 
 app = Flask(__name__)
-run_with_ngrok(app)  # Start ngrok when app is run
+# run_with_ngrok(app)  # Start ngrok when app is run
 CORS(app)
 
 
