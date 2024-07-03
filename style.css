@@ -145,6 +145,45 @@ button[type="button"]:hover {
     color: rgb(366, 366, 366);
 }
 
+/* Destination Rangking With MAUT */
+#rangking-maut {
+    background-color: #fff;
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.2);
+    margin: 150px auto 0;
+    width: 80%;
+    text-align: center;
+}
+
+#rangking-maut .rangking-section h2 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;
+}
+
+#rangking-maut .rangking-section #table{
+    height: 500px;
+    width: 75%;
+    margin: auto ;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
 /* ABOUT US */
 #about{
     width: 100%;
@@ -247,7 +286,6 @@ width: 100%;
 .destination-card .card-text{
     text-align: justify;
 }
-
 
 /* FOOTER */
 #footer {
@@ -358,6 +396,8 @@ width: 100%;
         margin: 10px 0;
     }
 
+    /* TABLE RANKING */
+
     /* ABOUT RESPONSIVE */
     #about .about-us{
         width: 80%;
@@ -390,12 +430,45 @@ width: 100%;
         width: 100%;
     }
 
-
     /* FOOTER RESPONSIVE */
     .footer-section {
         width: 100%;
         text-align: center;
         margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
     }
 }
 

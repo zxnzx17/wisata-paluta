@@ -1,14 +1,12 @@
 from flask import Flask, request, Response
+from flask_ngrok import run_with_ngrok
 from flask_cors import CORS
 import numpy as np
 import json
-import logging
-import os
 
 app = Flask(__name__)
+# run_with_ngrok(app)  # Start ngrok when app is run
 CORS(app)
-
-logging.basicConfig(level=logging.INFO)
 
 @app.before_request
 def handle_preflight():
@@ -90,22 +88,21 @@ def tabu_search(time_matrix, initial_solution, tabu_tenure, max_iterations):
 @app.route('/tabu_search', methods=['POST'])
 def run_tabu_search():
     data = request.json
-    logging.info(f"Received data: {data}")
-    try:
-        tabu_tenure = data.get('tabu_tenure', 5)
-        max_iterations = data.get('max_iterations', 40)
-        initial_solution = [0] + list(range(1, len(time_matrix))) + [0]
-        best_solution, best_cost = tabu_search(time_matrix, initial_solution, tabu_tenure, max_iterations)
-        
-        response = {
-            'best_solution': list(best_solution),
-            'best_cost': int(best_cost)
-        }
-        return Response(json.dumps(response), mimetype='application/json')
-    except Exception as e:
-        logging.error(f"Error in run_tabu_search: {e}")
-        return Response(f"Error: {e}", status=500, mimetype='application/json')
+    tabu_tenure = data.get('tabu_tenure', 5)
+    max_iterations = data.get('max_iterations', 40)
+    print(tabu_tenure)
+    print(max_iterations)
+    initial_solution = [0] + list(range(1, len(time_matrix))) + [0]
+    best_solution, best_cost = tabu_search(time_matrix, initial_solution, tabu_tenure, max_iterations)
+    
+    best_solution = list(best_solution)
+    best_cost = int(best_cost)
+    response = {
+        'best_solution': best_solution,
+        'best_cost': best_cost
+    }
+
+    return Response(json.dumps(response), mimetype='application/json')
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run();
