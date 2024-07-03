@@ -35,7 +35,7 @@ function runTabuSearch() {
     })
     .catch(error => {
         console.error('Fetch error:', error);
-        document.getElementById('result').innerText = 'Error ini brooo: ' + error.message;
+        document.getElementById('result').innerText = 'Terjadi Error: ' + error.message;
     });
 }
 
@@ -82,6 +82,8 @@ function displayRoute(route) {
     map.fitBounds(latlngs);
 }
 
+
+// Script Untuk Metode MAUT
 document.addEventListener("DOMContentLoaded", function() {
     fetch('/data/top6_ranked_data.json')
         .then(response => response.json())
