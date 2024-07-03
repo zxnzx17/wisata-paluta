@@ -118,9 +118,9 @@ nav ul li a:hover {
 }
 
 #maps .maps-section h2 {
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-size: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 2vw;
     font-style: normal;
     text-align: center;
 }
@@ -157,9 +157,9 @@ button[type="button"]:hover {
 }
 
 #rangking-maut h2 {
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-size: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 2vw;
     font-style: normal;
     text-align: center;
     margin-bottom: 50px;
@@ -269,7 +269,7 @@ width: 100%;
 
 .destination-card {
     width: 24rem;
-    height: 60rem;
+    height: auto;
     margin: auto;
     padding: 30px;
     opacity: .8;
@@ -399,11 +399,6 @@ width: 100%;
         padding: 20px;  
     }
 
-    .destination-card h5, .destination-card .address, .destination-card .facility, .destination-card .price, .destination-card .card-text, .destination-card p {
-        font-size: 16px; 
-        text-align: center; 
-    }
-
     .destination-card img {
         width: 100%; 
         height: auto; 
@@ -443,6 +438,10 @@ width: 100%;
         width: 100%;
     }
 
+    #rangking-maut h2{
+        font-size: 8vw;
+    }
+
     /* MAPS RESPONSIVE */
     #maps{
         width: 95%;
@@ -451,6 +450,10 @@ width: 100%;
 
     #maps .maps-section{
         width: 100%;
+    }
+
+    #maps .maps-section h2{
+        font-size: 8vw;
     }
 
     /* FOOTER RESPONSIVE */
