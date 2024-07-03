@@ -5,7 +5,7 @@ import numpy as np
 import json
 
 app = Flask(__name__)
-# run_with_ngrok(app)  # Start ngrok when app is run
+run_with_ngrok(app)  # Ini akan menjalankan ngrok secara otomatis
 CORS(app)
 
 @app.before_request
@@ -94,7 +94,7 @@ def run_tabu_search():
     print(max_iterations)
     initial_solution = [0] + list(range(1, len(time_matrix))) + [0]
     best_solution, best_cost = tabu_search(time_matrix, initial_solution, tabu_tenure, max_iterations)
-    
+
     best_solution = list(best_solution)
     best_cost = int(best_cost)
     response = {
@@ -105,4 +105,4 @@ def run_tabu_search():
     return Response(json.dumps(response), mimetype='application/json')
 
 if __name__ == '__main__':
-    app.run();
+    app.run()

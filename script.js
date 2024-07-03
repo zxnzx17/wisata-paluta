@@ -8,35 +8,24 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoiYXFpbGExMjMiLCJhIjoiY2x4Znc5M216MHF6NTJscXQ4aTE1NmtwOSJ9.B5qf1ggeoXYWTjnujSzc6w'
 }).addTo(map);
 
-function runTabuSearch() {
-    fetch('http://127.0.0.1:5000/tabu_search', {
-        method: 'POST',
-        headers: {
-            
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-            tabu_tenure: 5,
-            max_iterations: 40
+function loadAndDisplayRoute() {
+    fetch('./data/tabu_search.json')  // Ganti dengan path ke file JSON Anda
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
         })
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Data received:', data);
-        document.getElementById('result').innerText = `Rute Wisata: ${data.best_solution}\n Waktu Tempuh: ${data.best_cost} menit`;
+        .then(data => {
+            console.log('Data received:', data);
+            document.getElementById('result').innerText = `Rute Wisata: ${data.best_solution}\n Waktu Tempuh: ${data.best_cost} menit`;
 
-        displayRoute(data.best_solution);
-    })
-    .catch(error => {
-        console.error('Fetch error:', error);
-        document.getElementById('result').innerText = 'Terjadi Error: ' + error.message;
-    });
+            displayRoute(data.best_solution);
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            document.getElementById('result').innerText = 'Terjadi Error: ' + error.message;
+        });
 }
 
 function displayRoute(route) {
@@ -81,7 +70,6 @@ function displayRoute(route) {
     // Sesuaikan tampilan peta dengan rute
     map.fitBounds(latlngs);
 }
-
 
 // Script Untuk Metode MAUT
 document.addEventListener("DOMContentLoaded", function() {
