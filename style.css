@@ -414,8 +414,6 @@ width: 100%;
         margin: 10px 0;
     }
 
-    /* TABLE RANKING */
-
     /* ABOUT RESPONSIVE */
     #about .about-us{
         width: 80%;
@@ -428,7 +426,7 @@ width: 100%;
 
     #about .about-us p{
         width: 100%;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     #about .about-us img{
