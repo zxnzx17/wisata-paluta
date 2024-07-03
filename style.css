@@ -434,6 +434,15 @@ width: 100%;
         width: 100%;
     }
 
+    /* Rangking MAUT */
+    #rangking-maut{
+        width: 95%;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
     /* MAPS RESPONSIVE */
     #maps{
         width: 95%;
