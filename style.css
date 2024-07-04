@@ -146,28 +146,41 @@ button[type="button"]:hover {
     color: rgb(366, 366, 366);
 }
 
-/* Destination Rangking With MAUT */
-#rangking-maut {
-    background-color: #fff;
-    padding: 50px 50px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.2);
-    margin: 150px auto 0;
-    width: 80%;
+/* ABOUT US */
+#about{
+    width: 100%;
+    background: rgb(255,125,41);
+    background: linear-gradient(90deg, rgba(255,125,41,1) 0%, rgba(255,191,120,1) 35%, rgba(255,238,169,1) 100%);
+    margin: 150px 0 0 0;
+    padding: 100px 0;
 }
 
-#rangking-maut h2 {
-    font-family: "Lato", sans-serif;
-    font-weight: 800;
-    font-size: 2vw;
+.about-us h2{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
     font-style: normal;
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.table-container {
-    width: 90%;
-    margin: 0 auto;
+.about-us img{
+    border-radius: 20px;
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+}
+
+.about-us p{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+#about .table-container {
+    width: 60%;
+    margin: 30px auto;
     overflow-x: auto;
 }
 
@@ -176,13 +189,7 @@ table {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
-}
-
-.table thead {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
+    width: 60%;
 }
 
 .table th, .table td {
@@ -196,42 +203,6 @@ table {
 
 .table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
-}
-
-.table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-
-/* ABOUT US */
-#about{
-    width: 100%;
-    background: rgb(255,125,41);
-    background: linear-gradient(90deg, rgba(255,125,41,1) 0%, rgba(255,191,120,1) 35%, rgba(255,238,169,1) 100%);
-    margin-top: 150px;
-    padding: 100px 0;
-}
-
-.about-us h2{
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    text-align: center;
-}
-
-#about .about-us img{
-    border-radius: 20px;
-    display: block;
-    margin: 30px auto;
-    width: 50%;
-}
-
-.about-us p{
-    width: 60%;
-    margin: auto;
-    text-align: justify;
-    line-height: 30px;
-    font-size: 20px;
 }
 
 /* DESTINATION*/
@@ -428,18 +399,8 @@ width: 100%;
         width: 100%;
     }
 
-    /* Rangking MAUT */
-    #rangking-maut{
-        width: 95%;
-        padding: 20px;
-    }
-
-    .table-container {
+    #about .table-container {
         width: 100%;
-    }
-
-    #rangking-maut h2{
-        font-size: 8vw;
     }
 
     /* MAPS RESPONSIVE */
