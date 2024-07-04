@@ -18,7 +18,7 @@ function loadAndDisplayRoute() {
         })
         .then(data => {
             console.log('Data received:', data);
-            document.getElementById('result').innerText = `Rute Wisata: ${data.best_solution}\n Waktu Tempuh: ${data.best_cost} menit`;
+            document.getElementById('result').innerText = `Rute Wisata: ${data.best_solution}\n Perkiraan Waktu Tempuh: ${data.best_cost} menit`;
 
             displayRoute(data.best_solution);
         })
@@ -63,7 +63,7 @@ function displayRoute(route) {
     // Tambahkan penanda untuk setiap lokasi
     locations.forEach((location, index) => {
         L.marker([location.lat, location.lng])
-            .bindPopup(`${location.name}`)
+            .bindPopup(`(${index}) ${location.name}`)
             .addTo(map);
     });
 
