@@ -30,7 +30,7 @@
         <div class="text-home">
             <h3>Wisata</h3>
             <h3>Padang Lawas Utara</h3>
-            <a href="#destination"><button type="button" class="btn btn-secondary">Lihat Destinasi</button></a>
+            <a href="#destination"><button type="button" class="btn btn-warning mt-5">Lihat Destinasi</button></a>
         </div>
     </div>  
     
@@ -225,10 +225,19 @@
     <div id="maps">
         <div class="maps-section">
             <h2>MAPS</h2>
-            <button type="button" class="btn btn-warning mb-4" onclick="loadAndDisplayRouteWithTabuSeacrh()">Lihat Rute 1 </button>
-            <button type="button" class="btn btn-success mb-4" onclick="loadAndDisplayRouteWithPSO()">Lihat Rute 2</button>
-            <div id="result"></div>
+            <div class="recomendation-route mt-4">
+                <p>Rekomendasi Rute Wisata</p>
+                <button type="button" class="btn btn-warning mb-4" onclick="loadRoutesDataTabu()">Lihat Rute</button>
+                </div>
+            </div>
+            <div class="recomendation-route">
+                <p>Rekomendasi Rute Wisata Lainnya</p>
+                <button type="button" class="btn btn-success mb-4" onclick="loadRoutesDataPSO()">Lihat Rute</button>
+            </div>
             <div id="map"></div>
+            <div id="result" class="alert alert-success mt-3" role="alert">
+                Hasil Rekomendasi Rute
+            </div>
         </div>
     </div>
 
