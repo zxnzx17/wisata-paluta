@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   fetch("./data/top6_ranked_data.json")
     .then((response) => response.json())
